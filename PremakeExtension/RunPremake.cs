@@ -124,6 +124,11 @@ namespace PremakeExtension
                     pane.Activate();
                     pane.Clear();
 
+                    // Make sure the output window is shown so we can see the premake output pane
+                    DTE dte = (DTE)Package.GetGlobalService(typeof(DTE));
+                    Window window = dte.Windows.Item(EnvDTE.Constants.vsWindowKindOutput);
+                    window.Activate();
+
                     if (string.IsNullOrEmpty(premakePath))
                     {
                         pane.OutputString("Premake Executable Path not setup, go to 'Tools / Option' and browse to the 'Premake' page\n");
