@@ -4,7 +4,7 @@
         <Identity Id="PremakeExtension.8a150cdc-99d4-4a9a-a56f-82edd6b90a72" Version="1.0" Language="en-US" Publisher="Van Dijck, Tom" />
         <DisplayName>PremakeExtension</DisplayName>
         <Description xml:space="preserve">Premake Extension for Visual Studio 2017</Description>
-        <License>LICENSE.txt</License>
+        <License>..\LICENSE.txt</License>
         <Icon>Resources\RunPremake.png</Icon>
     </Metadata>
     <Installation>
